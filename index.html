@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание Авиарейсов</title>
+    <link type="text/css" rel="stylesheet" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="javascript" src="checkBox.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <form method='get' class="form">
+        <p><label>Вылет</label>
+            <input type="checkbox" value="1" name="departure" id="departure" >
+        </p>
+        <p><label>Прилет</label>
+            <input type="checkbox" value="2" name="landing" id="landing" >
+        </p>
+    </form>
+       <div class="scoreboard__title__position">
+            <div class="scoreboard__title">Расписание Аэропорта</div>
+       </div>
+    <table class="scoreboard" id="scoreboard">
+
+        <thead>
+           <tr>
+               <th class="scoreboard__head">Тип рейс</th>
+               <th class="scoreboard__head">Номер рейса</th>
+               <th class="scoreboard__head">Авиакомпания</th>
+               <th class="scoreboard__head">Логотип авиакомпании</th>
+               <th class="scoreboard__head">Тип поздушного судна</th>
+               <th class="scoreboard__head">Аэропорт назначения</th>
+               <th class="scoreboard__head">Плановое вреям вылета</th>
+               <th class="scoreboard__head">Статус рейса</th>
+               <th class="scoreboard__head">Примечание</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">HZ-781</td>
+                <td class="scoreboard__border">Aэрофлот</td>
+                <td class="scoreboard__border"><img src="img/Air_flot_logo.png" /></td>
+                <td class="scoreboard__border">Аэробус</td>
+                <td class="scoreboard__border">Кольцово</td>
+                <td class="scoreboard__border">02.08 08:15</td>
+                <td class="scoreboard__border">Ожидание посадки</td>
+                <td class="scoreboard__border">+7(4242)788–032</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">SU-5696</td>
+                <td class="scoreboard__border">ЮТэйр</td>
+                <td class="scoreboard__border"><img src="img/U_tair_logo.png" /></td>
+                <td class="scoreboard__border">Аэробус</td>
+                <td class="scoreboard__border">Быково</td>
+                <td class="scoreboard__border">31.07 11:00</td>
+                <td class="scoreboard__border">Регистрация</td>
+                <td class="scoreboard__border">+7(4242)43–83–05</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">S7-3210</td>
+                <td class="scoreboard__border">Россия</td>
+                <td class="scoreboard__border"><img src="img/Russia_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-757</td>
+                <td class="scoreboard__border">Внуково</td>
+                <td class="scoreboard__border">02.08 12:35</td>
+                <td class="scoreboard__border">Вылетел</td>
+                <td class="scoreboard__border">+7(4242)722–086</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">S7-3504</td>
+                <td class="scoreboard__border">Уральские авиалинии</td>
+                <td class="scoreboard__border"><img src="img/Ural_Airlines_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-737</td>
+                <td class="scoreboard__border">Мурманск</td>
+                <td class="scoreboard__border">02.08 17:00</td>
+                <td class="scoreboard__border">Летит</td>
+                <td class="scoreboard__border">+7(4242)722–000</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">HZ-801</td>
+                <td class="scoreboard__border">Ай Флай (I fly)</td>
+                <td class="scoreboard__border"><img src="img/I_fly_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-747</td>
+                <td class="scoreboard__border">Налым</td>
+                <td class="scoreboard__border">02.08 12:50</td>
+                <td class="scoreboard__border">Летит</td>
+                <td class="scoreboard__border">+7(4242)788–355</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">SU-1745</td>
+                <td class="scoreboard__border">Якутия</td>
+                <td class="scoreboard__border"><img src="img/Yakutia_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-777</td>
+                <td class="scoreboard__border">Стригино</td>
+                <td class="scoreboard__border">02.08 15:50</td>
+                <td class="scoreboard__border">Ожидание посадки</td>
+                <td class="scoreboard__border">+7(4242)788–355</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">HZ-803</td>
+                <td class="scoreboard__border">Ижавиа</td>
+                <td class="scoreboard__border"><img src="img/Igevia_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-767</td>
+                <td class="scoreboard__border">Спиченково</td>
+                <td class="scoreboard__border">02.08 08:25</td>
+                <td class="scoreboard__border">Летит</td>
+                <td class="scoreboard__border">+79631834411</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">UN-103</td>
+                <td class="scoreboard__border">Россия</td>
+                <td class="scoreboard__border"><img src="img/Russia_logo.png" /></td>
+                <td class="scoreboard__border">Airbus A321</td>
+                <td class="scoreboard__border">Толмачево</td>
+                <td class="scoreboard__border">02.08 08:25</td>
+                <td class="scoreboard__border">Регистрация</td>
+                <td class="scoreboard__border">+7(4242)722–000</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">S7-3209</td>
+                <td class="scoreboard__border">Aэрофлот</td>
+                <td class="scoreboard__border"><img src="img/Air_flot_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-214</td>
+                <td class="scoreboard__border">Толмачево</td>
+                <td class="scoreboard__border">02.08 10:20</td>
+                <td class="scoreboard__border">Позадка закончена</td>
+                <td class="scoreboard__border">+7(4242)788–032</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">IK-2536</td>
+                <td class="scoreboard__border">Уральские авиалинии</td>
+                <td class="scoreboard__border"><img src="img/Ural_Airlines_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-204С</td>
+                <td class="scoreboard__border">Кольцово</td>
+                <td class="scoreboard__border">02.08 21:45</td>
+                <td class="scoreboard__border">Ожидание посадки</td>
+                <td class="scoreboard__border">+7(4242)788–355</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">S7-3209</td>
+                <td class="scoreboard__border">Aэрофлот</td>
+                <td class="scoreboard__border"><img src="img/Air_flot_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-214</td>
+                <td class="scoreboard__border">Толмачево</td>
+                <td class="scoreboard__border">02.08 10:20</td>
+                <td class="scoreboard__border">Позадка закончена</td>
+                <td class="scoreboard__border">+7(4242)788–032</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">IK-2536</td>
+                <td class="scoreboard__border">Уральские авиалинии</td>
+                <td class="scoreboard__border"><img src="img/Ural_Airlines_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-204С</td>
+                <td class="scoreboard__border">Кольцово</td>
+                <td class="scoreboard__border">02.08 21:45</td>
+                <td class="scoreboard__border">Ожидание посадки</td>
+                <td class="scoreboard__border">+7(4242)788–355</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">S7-3209</td>
+                <td class="scoreboard__border">Aэрофлот</td>
+                <td class="scoreboard__border"><img src="img/Air_flot_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-214</td>
+                <td class="scoreboard__border">Толмачево</td>
+                <td class="scoreboard__border">02.08 10:20</td>
+                <td class="scoreboard__border">Позадка закончена</td>
+                <td class="scoreboard__border">+7(4242)788–032</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/lan.png" height="50" width="50" alt="Прилет"/></td>
+                <td class="scoreboard__border">IK-2536</td>
+                <td class="scoreboard__border">Уральские авиалинии</td>
+                <td class="scoreboard__border"><img src="img/Ural_Airlines_logo.png" /></td>
+                <td class="scoreboard__border">Туполев-204С</td>
+                <td class="scoreboard__border">Кольцово</td>
+                <td class="scoreboard__border">02.08 21:45</td>
+                <td class="scoreboard__border">Ожидание посадки</td>
+                <td class="scoreboard__border">+7(4242)788–355</td>
+            </tr>
+            <tr>
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">HZ-803</td>
+                <td class="scoreboard__border">Ижавиа</td>
+                <td class="scoreboard__border"><img src="img/Igevia_logo.png" /></td>
+                <td class="scoreboard__border">Боинг-767</td>
+                <td class="scoreboard__border">Спиченково</td>
+                <td class="scoreboard__border">02.08 08:25</td>
+                <td class="scoreboard__border">Летит</td>
+                <td class="scoreboard__border">+79631834411</td>
+            </tr>
+            <tr class="odd">
+                <td class="scoreboard__border"><img src="img/dep.png" height="50" width="50" alt="Вылет"/></td>
+                <td class="scoreboard__border">UN-103</td>
+                <td class="scoreboard__border">Россия</td>
+                <td class="scoreboard__border"><img src="img/Russia_logo.png" /></td>
+                <td class="scoreboard__border">Airbus A321</td>
+                <td class="scoreboard__border">Толмачево</td>
+                <td class="scoreboard__border">02.08 08:25</td>
+                <td class="scoreboard__border">Регистрация</td>
+                <td class="scoreboard__border">+7(4242)722–000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

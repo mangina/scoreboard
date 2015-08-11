@@ -1,0 +1,67 @@
+.odd {
+    background-color: #ddd;
+}
+
+.form {
+    position: fixed;
+    display: flex;
+    z-index: 101;
+    margin: 13px;
+}
+
+input {
+    margin-right: 15px;
+}
+
+.scoreboard {
+    width: 100%;
+    overflow: hidden;
+    table-layout:fixed;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+}
+.scoreboard__title__position {
+    position: relative;
+    height: 50px;
+    background-color: #fff;
+}
+.scoreboard__title {
+    position: fixed;
+    width: 100%;
+    color: #408080;
+    font-style: oblique;
+    font-size: 22px;
+    padding: 14px 0;
+    text-align: center;
+    background-color: #ddd;
+    z-index: 100;
+}
+
+tr:hover{
+    background: khaki;
+}
+
+
+td:hover:after {
+    content: "";
+    position: absolute;
+    background-color: #ffa;
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.scoreboard__border{
+    position: relative;
+    padding: 5px 10px;
+    border-right: 1px solid #c5c5c5;
+}
+
+.scoreboard__head {
+    padding: 5px 10px;
+    border-right: 1px solid #fff;
+    background-color: #408080;
+    color: #fff;
+}
